@@ -1,1 +1,1 @@
-# Zdzichu-Turowa-taktyczna-gra-RPG
+# Turowa-taktyczna-gra-RPG
