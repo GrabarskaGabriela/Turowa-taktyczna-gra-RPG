@@ -18,6 +18,7 @@ Recordings/
 *.pidb
 *.booproj
 *.svd
+*.plastic/
 
 # OS
 .DS_Store
