@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: c22842e8b7893604e89df247e72ebce1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3680275956815221363
+    second: "\u0142-ciezki-zestaw-removebg-preview_0"
+  - first:
+      213: 2120151148781734606
+    second: "\u0142-ciezki-zestaw-removebg-preview_1"
+  - first:
+      213: 5456989831148261367
+    second: "\u0142-ciezki-zestaw-removebg-preview_2"
+  - first:
+      213: 3766837518694255280
+    second: "\u0142-ciezki-zestaw-removebg-preview_3"
+  - first:
+      213: 1421427109449611528
+    second: "\u0142-ciezki-zestaw-removebg-preview_4"
+  - first:
+      213: -2776107273169425123
+    second: "\u0142-ciezki-zestaw-removebg-preview_5"
+  - first:
+      213: 8790404503709639542
+    second: "\u0142-ciezki-zestaw-removebg-preview_6"
+  - first:
+      213: 8531293459923877733
+    second: "\u0142-ciezki-zestaw-removebg-preview_7"
+  - first:
+      213: 2365005931898163961
+    second: "\u0142-ciezki-zestaw-removebg-preview_8"
+  - first:
+      213: 889081029091681718
+    second: "\u0142-ciezki-zestaw-removebg-preview_9"
+  - first:
+      213: -522927839042524947
+    second: "\u0142-ciezki-zestaw-removebg-preview_10"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_0"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 119
+        width: 194
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372d169db77f21330800000000000000
+      internalID: 3680275956815221363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_1"
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 237
+        width: 195
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca854d9c3a4c6d10800000000000000
+      internalID: 2120151148781734606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_2"
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 4
+        width: 185
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffc28cc65f1bbb40800000000000000
+      internalID: 5456989831148261367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_3"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 243
+        width: 256
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba826404ce764430800000000000000
+      internalID: 3766837518694255280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_4"
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 183
+        width: 45
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809badccc6ce9b310800000000000000
+      internalID: 1421427109449611528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_5"
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 13
+        width: 204
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dab5cb4294979d0800000000000000
+      internalID: -2776107273169425123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_6"
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 206
+        width: 162
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6736b93925acdf970800000000000000
+      internalID: 8790404503709639542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_7"
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 123
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f3069733e356670800000000000000
+      internalID: 8531293459923877733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_8"
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 6
+        width: 147
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f25b7e5d5032d020800000000000000
+      internalID: 2365005931898163961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_9"
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 89
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b56c834c76a65c00800000000000000
+      internalID: 889081029091681718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0142-ciezki-zestaw-removebg-preview_10"
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 80
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de825b6a6ef2eb8f0800000000000000
+      internalID: -522927839042524947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u0142-ciezki-zestaw-removebg-preview_0": 3680275956815221363
+      "\u0142-ciezki-zestaw-removebg-preview_1": 2120151148781734606
+      "\u0142-ciezki-zestaw-removebg-preview_10": -522927839042524947
+      "\u0142-ciezki-zestaw-removebg-preview_2": 5456989831148261367
+      "\u0142-ciezki-zestaw-removebg-preview_3": 3766837518694255280
+      "\u0142-ciezki-zestaw-removebg-preview_4": 1421427109449611528
+      "\u0142-ciezki-zestaw-removebg-preview_5": -2776107273169425123
+      "\u0142-ciezki-zestaw-removebg-preview_6": 8790404503709639542
+      "\u0142-ciezki-zestaw-removebg-preview_7": 8531293459923877733
+      "\u0142-ciezki-zestaw-removebg-preview_8": 2365005931898163961
+      "\u0142-ciezki-zestaw-removebg-preview_9": 889081029091681718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
