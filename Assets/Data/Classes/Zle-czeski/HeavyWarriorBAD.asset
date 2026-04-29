@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415805c84d7dee94ab91a097859853d7, type: 3}
+  m_Name: HeavyWarriorBAD
+  m_EditorClassIdentifier: Assembly-CSharp::UnitClassData
+  className: Heavy Warrior
+  portrait: {fileID: 6441755059016530286, guid: e36c27f21178bdb44be2f25a58c3f8f2, type: 3}
+  maxHP: 30
+  moveRange: 3
+  meleeRange: 1
+  rangedRange: 8
+  meleeDamage: 0
+  rangedDamage: 0

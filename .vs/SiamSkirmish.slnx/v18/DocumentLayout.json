@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\ai\\fuzzyaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai\\fuzzyaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\ai\\aidecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai\\aidecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\turns\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turns\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\grid\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grid\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\turns\\actionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turns\\actionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\input\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\spawning\\battlespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawning\\battlespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\units\\unitclassdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\unitclassdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\ui\\targetpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\targetpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\gabriela\\siamskirmish\\siamskirmish\\assets\\scripts\\ui\\battleuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\battleuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FuzzyAiController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\AI\\FuzzyAiController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AI\\FuzzyAiController.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\AI\\FuzzyAiController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AI\\FuzzyAiController.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAuwCABAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:03:30.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AiDecision.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\AI\\AiDecision.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AI\\AiDecision.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\AI\\AiDecision.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AI\\AiDecision.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T08:59:10.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActionValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Turns\\ActionValidator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Turns\\ActionValidator.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Turns\\ActionValidator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Turns\\ActionValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T22:17:23.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerInputController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Input\\PlayerInputController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\PlayerInputController.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Input\\PlayerInputController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\PlayerInputController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T22:08:45.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TurnManager.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Turns\\TurnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Turns\\TurnManager.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Turns\\TurnManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Turns\\TurnManager.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAAAN8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T21:20:13.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GridManager.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Grid\\GridManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Grid\\GridManager.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Grid\\GridManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Grid\\GridManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T22:17:37.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BattleSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Spawning\\BattleSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawning\\BattleSpawner.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Spawning\\BattleSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawning\\BattleSpawner.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowE4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T21:52:02.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitClassData.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Units\\UnitClassData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\UnitClassData.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\Units\\UnitClassData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Units\\UnitClassData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T21:39:04.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TargetPanelUI.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\UI\\TargetPanelUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\TargetPanelUI.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\UI\\TargetPanelUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\TargetPanelUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T21:24:46.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BattleUIController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\UI\\BattleUIController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BattleUIController.cs",
+              "ToolTip": "C:\\Users\\Gabriela\\SiamSkirmish\\SiamSkirmish\\Assets\\Scripts\\UI\\BattleUIController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BattleUIController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAIwGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T21:23:54.315Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
