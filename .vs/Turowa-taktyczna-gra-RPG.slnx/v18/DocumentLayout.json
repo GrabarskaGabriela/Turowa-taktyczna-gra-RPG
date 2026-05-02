@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Natalia\\Turowa-taktyczna-gra-RPG\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\natalia\\turowa-taktyczna-gra-rpg\\assets\\stancesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\stancesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\natalia\\turowa-taktyczna-gra-rpg\\assets\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\Natalia\\Turowa-taktyczna-gra-RPG\\Assets\\Character.cs",
+              "RelativeDocumentMoniker": "Assets\\Character.cs",
+              "ToolTip": "C:\\Users\\Natalia\\Turowa-taktyczna-gra-RPG\\Assets\\Character.cs",
+              "RelativeToolTip": "Assets\\Character.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:04:59.055Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StanceSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Natalia\\Turowa-taktyczna-gra-RPG\\Assets\\StanceSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\StanceSystem.cs",
+              "ToolTip": "C:\\Users\\Natalia\\Turowa-taktyczna-gra-RPG\\Assets\\StanceSystem.cs",
+              "RelativeToolTip": "Assets\\StanceSystem.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:06:53.573Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
