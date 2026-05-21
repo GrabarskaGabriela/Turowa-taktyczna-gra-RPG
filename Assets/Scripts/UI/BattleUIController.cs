@@ -74,7 +74,7 @@ namespace UI
                 return;
             }
 
-            turnText.text = u.isPlayer ? "Player Turn" : "AI Turn";
+            turnText.text = u.isPlayer ? "Tura gracza" : "Tura przeciwnika";
         }
 
         private void UpdatePhaseText(BattleState st)
@@ -82,11 +82,11 @@ namespace UI
             if (phaseText == null) return;
             phaseText.text = st switch
             {
-                BattleState.PlayerChooseAction => "Phase: Choose Action",
-                BattleState.PlayerChooseMove => "Phase: Choose Move",
-                BattleState.PlayerChooseAttackTarget => "Phase: Choose Attack",
-                BattleState.ExecutingAiTurn => "Phase: AI Executing",
-                _ => "Phase: –"
+                BattleState.PlayerChooseAction => "Faza: wybór akcji",
+                BattleState.PlayerChooseMove => "Faza: wybór ruchu",
+                BattleState.PlayerChooseAttackTarget => "Faza: wybór ataku",
+                BattleState.ExecutingAiTurn => "Faza: ruch przeciwnika",
+                _ => "Faza: –"
             };
         }
 
@@ -133,16 +133,16 @@ namespace UI
             var order = turnManager.CurrentTurnOrder;
             if (order == null || order.Count == 0)
             {
-                turnOrderText.text = "Turn Order:\n-";
+                turnOrderText.text = "Kolejność tur:\n-";
                 return;
             }
 
-            System.Text.StringBuilder builder = new System.Text.StringBuilder("Turn Order:");
+            System.Text.StringBuilder builder = new System.Text.StringBuilder("Kolejność tur:");
             for (int i = 0; i < order.Count; i++)
             {
                 Unit unit = order[i];
-                string side = unit.isPlayer ? "P" : "AI";
-                string className = unit.classData != null ? unit.classData.className : "Unit";
+                string side = unit.isPlayer ? "Gracz" : "Przeciwnik";
+                string className = unit.classData != null ? unit.classData.className : "Jednostka";
                 string marker = i == 0 ? ">" : "-";
                 builder.AppendLine();
                 builder.Append($"{marker} {side} #{unit.id} {className}");
@@ -157,7 +157,7 @@ namespace UI
             Transform parent = canvas != null ? canvas.transform : transform;
 
             if (turnOrderText == null)
-                turnOrderText = CreateText(parent, "TurnOrderText", "Turn Order:", new Vector2(1f, 1f),
+                turnOrderText = CreateText(parent, "TurnOrderText", "Kolejność tur:", new Vector2(1f, 1f),
                     new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-18f, -72f), new Vector2(290f, 190f), 18,
                     TextAlignmentOptions.TopRight);
 

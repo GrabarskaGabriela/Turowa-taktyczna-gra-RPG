@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LightArcherBAD
   m_EditorClassIdentifier: Assembly-CSharp::UnitClassData
   className: Light Archer
-  portrait: {fileID: -5147656045206295906, guid: c651d2d2c5c532c4aa5b89868e36f203, type: 3}
-  maxHP: 18
+  portrait: {fileID: 21300000, guid: b3f062c3281ee6f48ab4e1297d35e380, type: 3}
+  maxHp: 18
   moveRange: 5
   meleeRange: 1
   rangedRange: 3

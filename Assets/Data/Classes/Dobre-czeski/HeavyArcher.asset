@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HeavyArcher
   m_EditorClassIdentifier: Assembly-CSharp::UnitClassData
   className: Heavy Archer
-  portrait: {fileID: -7091107447963377638, guid: 64e48f18eb4f4c544a2dcd65ab8a0ade, type: 3}
-  maxHP: 24
+  portrait: {fileID: 21300000, guid: e0cc7d65248bac74d981a13d7f0a03bf, type: 3}
+  maxHp: 24
   moveRange: 3
   meleeRange: 1
   rangedRange: 5

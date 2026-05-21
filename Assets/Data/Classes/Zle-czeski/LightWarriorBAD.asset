@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LightWarriorBAD
   m_EditorClassIdentifier: Assembly-CSharp::UnitClassData
   className: Light Warrior
-  portrait: {fileID: 5430635593653815387, guid: 5ccbec29e29f1714d82ae7a4c8239972, type: 3}
-  maxHP: 22
+  portrait: {fileID: 21300000, guid: 1a5b64fdac953c849929d4227f8c3ff3, type: 3}
+  maxHp: 22
   moveRange: 4
   meleeRange: 1
   rangedRange: 6

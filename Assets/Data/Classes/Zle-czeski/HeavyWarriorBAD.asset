@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HeavyWarriorBAD
   m_EditorClassIdentifier: Assembly-CSharp::UnitClassData
   className: Heavy Warrior
-  portrait: {fileID: 6441755059016530286, guid: e36c27f21178bdb44be2f25a58c3f8f2, type: 3}
-  maxHP: 30
+  portrait: {fileID: 21300000, guid: 9e4c52cb92ec3a84483c296979d092f9, type: 3}
+  maxHp: 30
   moveRange: 3
   meleeRange: 1
   rangedRange: 0
