@@ -15,8 +15,7 @@ namespace AI
 
         private static void LogFuzzy(string message)
         {
-            LogManager log = Object.FindAnyObjectByType<LogManager>();
-            if (log != null) log.AddLog(message);
+            BattleLog.Add(message);
             Debug.Log($"[FuzzyDecision] {message}");
         }
 

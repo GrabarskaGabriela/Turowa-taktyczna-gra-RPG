@@ -116,6 +116,9 @@ namespace Spawning
             UnitView uv = u.GetComponent<UnitView>();
             if (uv != null) uv.coords = this.coords;
 
+            if (u.GetComponent<UnitHealthBar>() == null)
+                u.gameObject.AddComponent<UnitHealthBar>();
+
             u.transform.position = coords.GridToWorld(gridPos);
             return u;
         }

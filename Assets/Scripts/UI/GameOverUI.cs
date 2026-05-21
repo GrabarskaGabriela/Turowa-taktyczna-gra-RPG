@@ -14,5 +14,10 @@ namespace UI
         {
             SceneManager.LoadScene(0);
         }
+
+        public void QuitGame()
+        {
+            ApplicationQuitter.Quit();
+        }
     }
 }

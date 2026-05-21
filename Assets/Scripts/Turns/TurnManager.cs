@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using AI;
@@ -19,13 +20,36 @@ namespace Turns
         [Header("Units")] public List<Unit> units = new List<Unit>();
 
         [Header("State")] public BattleState state = BattleState.AwaitingTurnStart;
+        [SerializeField] private float aiStepDelay = 0.35f;
+        [SerializeField] private float aiMoveStopDistance = 0.03f;
 
         public Unit ActiveUnit => _activeUnit;
         public BattleState State => state;
         public Unit LastSelectedTarget { get; private set; }
+        public IReadOnlyList<Unit> CurrentTurnOrder
+        {
+            get
+            {
+                var order = new List<Unit>();
+                if (_activeUnit != null && _activeUnit.IsAlive)
+                    order.Add(_activeUnit);
+
+                order.AddRange(_turnQueue.Where(u => u != null && u.IsAlive));
+                return order;
+            }
+        }
+
+        public bool CanPlayerChooseMove =>
+            _activeUnit != null && _activeUnit.isPlayer && state == BattleState.PlayerChooseAction &&
+            !_playerActions.moveUsed;
+
+        public bool CanPlayerChooseAttack =>
+            _activeUnit != null && _activeUnit.isPlayer && state == BattleState.PlayerChooseAction &&
+            !_playerActions.attackUsed;
 
         private readonly Queue<Unit> _turnQueue = new Queue<Unit>();
         private Unit _activeUnit;
+        private Coroutine _aiTurnRoutine;
 
         private readonly PlayerActionState _playerActions = new PlayerActionState();
         private List<Vector2Int> _cachedReachable = new List<Vector2Int>();
@@ -36,10 +60,7 @@ namespace Turns
 
         private static void Log(string message)
         {
-            LogManager log = Object.FindAnyObjectByType<LogManager>();
-            if (log != null)
-                log.AddLog(message);
-
+            BattleLog.Add(message);
             Debug.Log($"[BattleLog] {message}");
         }
 
@@ -100,16 +121,34 @@ namespace Turns
             {
                 Log($"<color=red>Tura AI:</color> Wróg #{_activeUnit.id}");
                 state = BattleState.ExecutingAiTurn;
-                DoAiTurn(_activeUnit);
-                EndActiveTurn();
+                _aiTurnRoutine = StartCoroutine(DoAiTurnRoutine(_activeUnit));
             }
         }
 
         void PreparePlayerTurn()
         {
+            state = BattleState.PlayerChooseAction;
+            CachePlayerReachable();
+            grid.ClearRange();
+        }
+
+        public void PlayerChooseMove()
+        {
+            if (_activeUnit == null || !_activeUnit.isPlayer || state != BattleState.PlayerChooseAction) return;
+            if (_playerActions.moveUsed) return;
+
             state = BattleState.PlayerChooseMove;
             CachePlayerReachable();
             grid.ShowRange(_cachedReachable, false);
+        }
+
+        public void PlayerChooseAttack()
+        {
+            if (_activeUnit == null || !_activeUnit.isPlayer || state != BattleState.PlayerChooseAction) return;
+            if (_playerActions.attackUsed) return;
+
+            state = BattleState.PlayerChooseAttackTarget;
+            ShowAttackRange();
         }
 
         public void PlayerSkipMove()
@@ -118,8 +157,7 @@ namespace Turns
 
             Log("Gracz pomija fazę ruchu.");
             _playerActions.moveUsed = true;
-            state = BattleState.PlayerChooseAttackTarget;
-            ShowAttackRange();
+            ReturnToPlayerActionSelectionOrEndTurn();
         }
 
         public void PlayerSkipAttack()
@@ -128,7 +166,7 @@ namespace Turns
 
             Log("Gracz pomija fazę ataku.");
             _playerActions.attackUsed = true;
-            EndActiveTurn();
+            ReturnToPlayerActionSelectionOrEndTurn();
         }
 
         public void PlayerEndTurn()
@@ -141,7 +179,16 @@ namespace Turns
             EndActiveTurn();
         }
 
-        void DoAiTurn(Unit enemy)
+        public void PlayerSetStance(Stance stance)
+        {
+            if (_activeUnit == null || !_activeUnit.isPlayer || state != BattleState.PlayerChooseAction) return;
+
+            if (_activeUnit.stance == stance) return;
+
+            _activeUnit.ChangeStance(stance);
+        }
+
+        IEnumerator DoAiTurnRoutine(Unit enemy)
         {
             var aliveUnits = units.Where(x => x != null && x.IsAlive).ToList();
             var d = ai.Evaluate(enemy, aliveUnits, grid);
@@ -159,12 +206,14 @@ namespace Turns
                 if (enemy.gridPos != dest)
                     Log($"AI przemieszcza się na pole {dest}");
 
-                enemy.gridPos = dest;
-                SyncUnitTransformToGrid(enemy);
+                yield return MoveEnemyTo(enemy, dest);
             }
 
             if (d.attack && target != null && target.IsAlive)
             {
+                if (d.sequence == ActionSequence.MoveThenAttack)
+                    yield return new WaitForSeconds(aiStepDelay);
+
                 int distNow = GridManager.Manhattan(enemy.gridPos, target.gridPos);
                 if (enemy.GetBestDamageAtDistance(distNow) > 0)
                 {
@@ -179,9 +228,43 @@ namespace Turns
 
             if (d.sequence == ActionSequence.AttackThenMove)
             {
+                yield return new WaitForSeconds(aiStepDelay);
                 Log($"AI wykonuje ruch taktyczny na {dest}");
-                enemy.gridPos = dest;
-                SyncUnitTransformToGrid(enemy);
+                yield return MoveEnemyTo(enemy, dest);
+            }
+
+            yield return new WaitForSeconds(aiStepDelay);
+            _aiTurnRoutine = null;
+            EndActiveTurn();
+        }
+
+        private IEnumerator MoveEnemyTo(Unit enemy, Vector2Int dest)
+        {
+            if (enemy == null || !enemy.IsAlive)
+                yield break;
+
+            if (enemy.gridPos == dest)
+                yield break;
+
+            enemy.gridPos = dest;
+            yield return WaitForUnitMovement(enemy);
+        }
+
+        private IEnumerator WaitForUnitMovement(Unit unit)
+        {
+            if (unit == null || _coords == null)
+                yield break;
+
+            Vector3 targetPos = _coords.GridToWorld(unit.gridPos);
+            const float maxWaitSeconds = 2f;
+            float elapsed = 0f;
+
+            while (unit != null &&
+                   Vector3.Distance(unit.transform.position, targetPos) > aiMoveStopDistance &&
+                   elapsed < maxWaitSeconds)
+            {
+                elapsed += Time.deltaTime;
+                yield return null;
             }
         }
 
@@ -205,8 +288,7 @@ namespace Turns
             SyncUnitTransformToGrid(_activeUnit);
 
             _playerActions.moveUsed = true;
-            state = BattleState.PlayerChooseAttackTarget;
-            ShowAttackRange();
+            ReturnToPlayerActionSelectionOrEndTurn();
         }
 
         void HandlePlayerAttackClick(Vector2Int clicked)
@@ -214,16 +296,24 @@ namespace Turns
             if (_playerActions.attackUsed) return;
 
             Unit target = UnitQuery.GetUnitAt(units, clicked);
-            if (target == null) return;
+            if (target == null)
+            {
+                Log("Na tym polu nie ma celu do ataku.");
+                return;
+            }
 
             LastSelectedTarget = target;
 
-            if (!ActionValidator.CanAttack(_activeUnit, target)) return;
+            if (!ActionValidator.CanAttack(_activeUnit, target))
+            {
+                Log("Nie mozesz zaatakowac tego celu.");
+                return;
+            }
 
             Log($"Atakujesz Wróg #{target.id}!");
             combat.Attack(_activeUnit, target);
             _playerActions.attackUsed = true;
-            EndActiveTurn();
+            ReturnToPlayerActionSelectionOrEndTurn();
         }
 
         void ShowAttackRange()
@@ -265,6 +355,19 @@ namespace Turns
             _activeUnit = null;
             state = BattleState.AwaitingTurnStart;
             StartNextTurn();
+        }
+
+        void ReturnToPlayerActionSelectionOrEndTurn()
+        {
+            grid.ClearRange();
+
+            if (_playerActions.moveUsed && _playerActions.attackUsed)
+            {
+                EndActiveTurn();
+                return;
+            }
+
+            state = BattleState.PlayerChooseAction;
         }
 
         void CleanupDeadFront()
@@ -311,7 +414,9 @@ namespace Turns
         {
             if (_activeUnit == null || !_activeUnit.isPlayer) return;
 
-            if (state == BattleState.PlayerChooseMove)
+            if (state == BattleState.PlayerChooseAction)
+                PlayerEndTurn();
+            else if (state == BattleState.PlayerChooseMove)
                 PlayerSkipMove();
             else if (state == BattleState.PlayerChooseAttackTarget)
                 PlayerSkipAttack();

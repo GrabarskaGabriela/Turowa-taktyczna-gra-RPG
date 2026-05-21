@@ -1,43 +1,40 @@
 fileFormatVersion: 2
-guid: ca5cdc995dab8ae4fb3ac854b217a283
+guid: f8510f551e362714d9ef9810d618bd02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4373184736405950995
-    second: floor_0
+      213: -4206870745599806488
+    second: floor (1)_0
   - first:
-      213: 4158732434352698325
-    second: floor_1
+      213: 5470605887215497739
+    second: floor (1)_1
   - first:
-      213: 4341242654334979365
-    second: floor_2
+      213: -2398890055187345087
+    second: floor (1)_2
   - first:
-      213: 1903813881350671106
-    second: floor_3
+      213: 4966430703104877731
+    second: floor (1)_3
   - first:
-      213: 8666153195878230358
-    second: floor_4
+      213: -6373600321630791797
+    second: floor (1)_4
   - first:
-      213: 4633350270274512122
-    second: floor_5
+      213: -5278503247456319711
+    second: floor (1)_5
   - first:
-      213: -3085053661432295534
-    second: floor_6
+      213: 4490545797226894925
+    second: floor (1)_6
   - first:
-      213: 601623144054556460
-    second: floor_7
+      213: 89615165857765054
+    second: floor (1)_7
   - first:
-      213: 7700971350373784707
-    second: floor_8
+      213: -8467239207085960271
+    second: floor (1)_8
   - first:
-      213: 6482533309307412173
-    second: floor_9
+      213: 3639590983948008441
+    second: floor (1)_9
   - first:
-      213: -6716143812497719498
-    second: floor_10
-  - first:
-      213: -238930871357459764
-    second: floor_11
+      213: 2615828800032232201
+    second: floor (1)_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -80,11 +77,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteExtrude: 8
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor_0
+      name: floor (1)_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 1124
-        width: 337
-        height: 220
+        x: 79
+        y: 953
+        width: 379
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dedec5107a35f43c0800000000000000
-      internalID: -4373184736405950995
+      spriteID: 8e37a8888513e95c0800000000000000
+      internalID: -4206870745599806488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_1
+      name: floor (1)_1
       rect:
         serializedVersion: 2
-        x: 380
-        y: 1124
-        width: 334
-        height: 220
+        x: 468
+        y: 953
+        width: 376
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d3fc797d19c6b930800000000000000
-      internalID: 4158732434352698325
+      spriteID: b02f3a5e11f7beb40800000000000000
+      internalID: 5470605887215497739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_2
+      name: floor (1)_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1124
-        width: 334
-        height: 220
+        x: 853
+        y: 953
+        width: 378
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52d096771313f3c30800000000000000
-      internalID: 4341242654334979365
+      spriteID: 1415755643e65bed0800000000000000
+      internalID: -2398890055187345087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_3
+      name: floor (1)_3
       rect:
         serializedVersion: 2
-        x: 35
-        y: 793
-        width: 337
-        height: 219
+        x: 79
+        y: 680
+        width: 380
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20b4d5463a4bb6a10800000000000000
-      internalID: 1903813881350671106
+      spriteID: 3a4e824496e4ce440800000000000000
+      internalID: 4966430703104877731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_4
+      name: floor (1)_4
       rect:
         serializedVersion: 2
-        x: 380
-        y: 793
-        width: 334
-        height: 219
+        x: 468
+        y: 680
+        width: 376
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65920799a6c544870800000000000000
-      internalID: 8666153195878230358
+      spriteID: b8791e8b64c6c87a0800000000000000
+      internalID: -6373600321630791797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_5
+      name: floor (1)_5
       rect:
         serializedVersion: 2
-        x: 720
-        y: 793
-        width: 334
-        height: 219
+        x: 852
+        y: 680
+        width: 378
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af42ca3b587fc4040800000000000000
-      internalID: 4633350270274512122
+      spriteID: 127ce9d534dfeb6b0800000000000000
+      internalID: -5278503247456319711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_6
+      name: floor (1)_6
       rect:
         serializedVersion: 2
-        x: 35
-        y: 462
-        width: 337
-        height: 222
+        x: 79
+        y: 407
+        width: 381
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29f4f4d4a00bf25d0800000000000000
-      internalID: -3085053661432295534
+      spriteID: d4615535c9f915e30800000000000000
+      internalID: 4490545797226894925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_7
+      name: floor (1)_7
       rect:
         serializedVersion: 2
-        x: 380
-        y: 462
-        width: 334
-        height: 222
+        x: 468
+        y: 407
+        width: 376
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c27860edf05695800800000000000000
-      internalID: 601623144054556460
+      spriteID: eb6907fb4806e3100800000000000000
+      internalID: 89615165857765054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_8
+      name: floor (1)_8
       rect:
         serializedVersion: 2
-        x: 720
-        y: 463
-        width: 334
-        height: 221
+        x: 852
+        y: 407
+        width: 378
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38c5d7444a85fda60800000000000000
-      internalID: 7700971350373784707
+      spriteID: 1b391617dc25e7a80800000000000000
+      internalID: -8467239207085960271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_9
+      name: floor (1)_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 130
-        width: 337
-        height: 219
+        x: 218
+        y: 102
+        width: 381
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dced7e9e2b596f950800000000000000
-      internalID: 6482533309307412173
+      spriteID: 9fb7fed67bc628230800000000000000
+      internalID: 3639590983948008441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_10
+      name: floor (1)_10
       rect:
         serializedVersion: 2
-        x: 380
-        y: 130
-        width: 334
-        height: 219
+        x: 673
+        y: 101
+        width: 381
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,30 +365,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63fb2a349c67bc2a0800000000000000
-      internalID: -6716143812497719498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_11
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 130
-        width: 334
-        height: 219
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc23dde63a52facf0800000000000000
-      internalID: -238930871357459764
+      spriteID: 90358233f6a4d4420800000000000000
+      internalID: 2615828800032232201
       vertices: []
       indices: 
       edges: []
@@ -410,18 +385,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      floor_0: -4373184736405950995
-      floor_1: 4158732434352698325
-      floor_10: -6716143812497719498
-      floor_11: -238930871357459764
-      floor_2: 4341242654334979365
-      floor_3: 1903813881350671106
-      floor_4: 8666153195878230358
-      floor_5: 4633350270274512122
-      floor_6: -3085053661432295534
-      floor_7: 601623144054556460
-      floor_8: 7700971350373784707
-      floor_9: 6482533309307412173
+      floor (1)_0: -4206870745599806488
+      floor (1)_1: 5470605887215497739
+      floor (1)_10: 2615828800032232201
+      floor (1)_2: -2398890055187345087
+      floor (1)_3: 4966430703104877731
+      floor (1)_4: -6373600321630791797
+      floor (1)_5: -5278503247456319711
+      floor (1)_6: 4490545797226894925
+      floor (1)_7: 89615165857765054
+      floor (1)_8: -8467239207085960271
+      floor (1)_9: 3639590983948008441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

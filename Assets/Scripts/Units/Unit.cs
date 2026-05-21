@@ -7,11 +7,15 @@ namespace Units
     public enum ActionSequence { MoveOnly, AttackOnly, MoveThenAttack, AttackThenMove }
 
     [System.Serializable]
-    public class PlayerActionState 
+    public class PlayerActionState
     {
         public bool moveUsed;
         public bool attackUsed;
-        public void Reset() { moveUsed = false; attackUsed = false; }
+        public void Reset()
+        {
+            moveUsed = false;
+            attackUsed = false;
+        }
     }
 
     [System.Serializable]
@@ -35,23 +39,26 @@ namespace Units
         public Vector2Int gridPos;
 
         public bool IsAlive => hp > 0;
+        private bool _defeatVisualsHidden;
 
         private static void LogToBattleLog(string message)
         {
-            LogManager log = Object.FindAnyObjectByType<LogManager>();
-            if (log != null)
-            {
-                log.AddLog(message);
-            }
+            BattleLog.Add(message);
             Debug.Log(message);
         }
 
         public int GetBestDamageAtDistance(int manhattanDist)
         {
             if (classData == null) return 0;
-            if (manhattanDist <= classData.meleeRange) return classData.meleeDamage;
-            if (classData.rangedRange > 0 && manhattanDist <= classData.rangedRange) return classData.rangedDamage;
-            return 0;
+
+            int bestDamage = 0;
+            if (classData.meleeDamage > 0 && manhattanDist <= classData.meleeRange)
+                bestDamage = Mathf.Max(bestDamage, classData.meleeDamage);
+
+            if (classData.rangedDamage > 0 && classData.rangedRange > 0 && manhattanDist <= classData.rangedRange)
+                bestDamage = Mathf.Max(bestDamage, classData.rangedDamage);
+
+            return bestDamage;
         }
 
         public float DamageDealtMultiplier => stance switch
@@ -68,28 +75,50 @@ namespace Units
             _ => 1.0f
         };
 
-        public void ApplyDamage(int raw)
+        public int ApplyDamage(int raw, bool logDamage = true)
         {
+            int hpBefore = hp;
             int dmg = Mathf.Max(0, Mathf.RoundToInt(raw * DamageTakenMultiplier));
             hp -= dmg;
             if (hp < 0) hp = 0;
-            
-            string unitName = isPlayer ? $"<color=blue>Kot #{id}</color>" : $"<color=red>Wróg #{id}</color>";
-            string logMessage = $"{unitName} otrzymuje <b>{dmg}</b> obrażeń. (HP: {hp})";
-        
+
+            int actualDamage = hpBefore - hp;
+            bool defeated = hp == 0;
+
+            if (!logDamage)
+            {
+                if (defeated)
+                    HideDefeatedUnit();
+                return actualDamage;
+            }
+
+            string unitName = isPlayer ? $"<color=blue>Kot #{id}</color>" : $"<color=red>Wrog #{id}</color>";
+            string logMessage = $"{unitName} otrzymuje <b>{actualDamage}</b> obrazen. (HP: {hp})";
+
             LogToBattleLog(logMessage);
 
-            if (hp == 0)
+            if (defeated)
             {
-                LogToBattleLog($"{unitName} <color=black>został pokonany!</color>");
+                LogToBattleLog($"{unitName} <color=black>zostal pokonany!</color>");
+                HideDefeatedUnit();
             }
+
+            return actualDamage;
         }
-        
+
+        private void HideDefeatedUnit()
+        {
+            if (_defeatVisualsHidden) return;
+
+            _defeatVisualsHidden = true;
+            gameObject.SetActive(false);
+        }
+
         public void ChangeStance(Stance newStance)
         {
             stance = newStance;
-            string unitName = isPlayer ? "Twój kot" : "Wrogi kot";
-            LogToBattleLog($"{unitName} zmienia postawę na <b>{newStance}</b>.");
+            string unitName = isPlayer ? "Twoj kot" : "Wrogi kot";
+            LogToBattleLog($"{unitName} zmienia postawe na <b>{newStance}</b>.");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace UI
         }
         public void QuitGame()
         {
-            Application.Quit();
+            ApplicationQuitter.Quit();
         }
     }
 }

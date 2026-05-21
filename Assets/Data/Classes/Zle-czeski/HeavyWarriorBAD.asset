@@ -17,6 +17,6 @@ MonoBehaviour:
   maxHP: 30
   moveRange: 3
   meleeRange: 1
-  rangedRange: 8
-  meleeDamage: 0
+  rangedRange: 0
+  meleeDamage: 9
   rangedDamage: 0

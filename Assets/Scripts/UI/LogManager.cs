@@ -33,8 +33,27 @@ namespace UI
             _logLines.Add(newLine);
 
             if (scrollRect != null)
+            {
                 Canvas.ForceUpdateCanvases();
-            scrollRect.verticalNormalizedPosition = 0f;
+                scrollRect.verticalNormalizedPosition = 0f;
+            }
+        }
+    }
+
+    public static class BattleLog
+    {
+        public static void Add(string message)
+        {
+            LogManager legacyLog = Object.FindAnyObjectByType<LogManager>();
+            if (legacyLog != null && legacyLog.logTextPrefab != null && legacyLog.container != null)
+            {
+                legacyLog.AddLog(message);
+                return;
+            }
+
+            global::CombatLogUI combatLog = global::CombatLogUI.EnsureInScene();
+            if (combatLog != null)
+                combatLog.AddLog(message);
         }
     }
 }

@@ -4,9 +4,10 @@ namespace Turns
     {
         AwaitingTurnStart = 0,
 
-        PlayerChooseMove = 1,
-        PlayerChooseAttackTarget = 2,
+        PlayerChooseAction = 1,
+        PlayerChooseMove = 2,
+        PlayerChooseAttackTarget = 3,
 
-        ExecutingAiTurn = 3
+        ExecutingAiTurn = 4
     }
 }
