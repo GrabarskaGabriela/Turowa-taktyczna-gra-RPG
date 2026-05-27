@@ -1,5 +1,6 @@
 using TMPro;
 using Turns;
+using Units;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,7 +33,7 @@ namespace UI
                 portrait.sprite = (p != null) ? p : defaultPortrait;
             }
 
-            if (nameText != null) nameText.text = $"{t.classData.className} (ID {t.id})";
+            if (nameText != null) nameText.text = UnitDisplayNames.UnitName(t);
             if (hpText != null) hpText.text = $"HP: {t.hp}/{t.classData.maxHp}";
             if (hpSlider != null) hpSlider.value = (float)t.hp / t.classData.maxHp;
         }

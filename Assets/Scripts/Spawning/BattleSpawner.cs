@@ -105,6 +105,7 @@ namespace Spawning
             u.classData = cls;
             u.hp = cls.maxHp;
             u.gridPos = gridPos;
+            u.InitializeCombatResources();
 
             SpriteRenderer sr = u.GetComponent<SpriteRenderer>();
             if (sr != null && cls.portrait != null)

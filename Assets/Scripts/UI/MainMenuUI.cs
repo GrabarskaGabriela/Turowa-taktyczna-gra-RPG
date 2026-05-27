@@ -5,13 +5,13 @@ namespace UI
 {
     public class MainMenuUI : MonoBehaviour
     {
-        public void StartGame()
+        public static void StartGame()
         {
             SceneManager.LoadScene(1);
         }
-        public void QuitGame()
+        public static void QuitGame()
         {
-            ApplicationQuitter.Quit();
+            Application.Quit();
         }
     }
 }

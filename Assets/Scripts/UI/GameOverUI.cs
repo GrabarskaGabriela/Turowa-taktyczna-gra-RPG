@@ -5,19 +5,14 @@ namespace UI
 {
     public class GameOverUI : MonoBehaviour
     {
-        public void RestartGame()
+        public static void RestartGame()
         {
             SceneManager.LoadScene(1);
         }
 
-        public void GoToMenu()
+        public static void GoToMenu()
         {
             SceneManager.LoadScene(0);
-        }
-
-        public void QuitGame()
-        {
-            ApplicationQuitter.Quit();
         }
     }
 }

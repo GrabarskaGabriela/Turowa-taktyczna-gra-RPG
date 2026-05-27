@@ -18,5 +18,8 @@ namespace Units
 
         public int meleeDamage = 5;
         public int rangedDamage = 3;
+
+        [Tooltip("-1 oznacza brak limitu. 0 oznacza brak atakow dystansowych.")]
+        public int rangedAttackUses = -1;
     }
 }

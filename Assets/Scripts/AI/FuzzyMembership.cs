@@ -14,7 +14,11 @@ namespace AI
 
         public static float Trap(float x, float a, float b, float c, float d)
         {
-            if (x <= a || x >= d) return 0f;
+            if (x < a || x > d) return 0f;
+            if (Mathf.Approximately(a, b) && x <= b) return 1f;
+            if (Mathf.Approximately(c, d) && x >= c) return 1f;
+            if (Mathf.Approximately(x, a) && !Mathf.Approximately(a, b)) return 0f;
+            if (Mathf.Approximately(x, d) && !Mathf.Approximately(c, d)) return 0f;
             if (x >= b && x <= c) return 1f;
             if (x < b) return (x - a) / (b - a);
             return (d - x) / (d - c);

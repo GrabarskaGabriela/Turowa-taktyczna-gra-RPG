@@ -9,7 +9,7 @@ namespace UI
     {
         public GameObject logTextPrefab;
         public Transform container;
-        public int maxLines = 10;
+        public int maxLines = 18;
         public ScrollRect scrollRect;
 
         private readonly List<GameObject> _logLines = new List<GameObject>();
@@ -51,9 +51,7 @@ namespace UI
                 return;
             }
 
-            global::CombatLogUI combatLog = global::CombatLogUI.EnsureInScene();
-            if (combatLog != null)
-                combatLog.AddLog(message);
+            CombatLogUI.EnsureInScene().AddLog(message);
         }
     }
 }

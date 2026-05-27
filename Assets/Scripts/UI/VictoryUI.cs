@@ -5,14 +5,14 @@ namespace UI
 {
     public class VictoryUI : MonoBehaviour
     {
-        public void GoToMenu()
+        public static void GoToMenu()
         {
             SceneManager.LoadScene(0);
         }
 
-        public void QuitGame()
+        public static void QuitGame()
         {
-            ApplicationQuitter.Quit();
+            Application.Quit();
         }
     }
 }

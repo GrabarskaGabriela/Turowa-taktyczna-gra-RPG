@@ -6,7 +6,7 @@ namespace Grid
 {
     public class GridManager : MonoBehaviour
     {
-        [Header("Wizualizacja scian")] public Tilemap wallsTilemap; //opcjonalne ściany
+        [Header("Wizualizacja scian")] public Tilemap wallsTilemap;
 
         [Header("Wizualizacja planszy")] public Tilemap visualTilemap;
         public TileBase lightTile;

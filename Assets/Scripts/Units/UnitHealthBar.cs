@@ -60,15 +60,15 @@ namespace Units
             var part = new GameObject(objectName);
             part.transform.SetParent(transform, false);
 
-            var renderer = part.AddComponent<SpriteRenderer>();
-            renderer.sprite = _pixelSprite;
-            renderer.color = color;
-            renderer.sortingOrder = sortingOrder;
+            var spriteRenderer = part.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = _pixelSprite;
+            spriteRenderer.color = color;
+            spriteRenderer.sortingOrder = sortingOrder;
 
             if (_unitRenderer != null)
-                renderer.sortingLayerID = _unitRenderer.sortingLayerID;
+                spriteRenderer.sortingLayerID = _unitRenderer.sortingLayerID;
 
-            return renderer;
+            return spriteRenderer;
         }
 
         private void UpdateFill(int maxHp)

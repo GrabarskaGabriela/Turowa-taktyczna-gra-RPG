@@ -20,3 +20,4 @@ MonoBehaviour:
   rangedRange: 5
   meleeDamage: 6
   rangedDamage: 7
+  rangedAttackUses: -1
